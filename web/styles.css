@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    background-color: skyblue;
+    overscroll-behavior: none;
+    /*prevent moving up and down while drawing in mobile*/
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 22px;
+    background-color: navy;
+    color: white;
+}
+
+button:disabled,
+button:disabled:hover {
+    background-color: gray;
+    cursor: default;
+}
